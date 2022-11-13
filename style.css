@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: red;
+    font-size: 75px;
+    font-family: "a dripping marker", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.logo:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 7px rgb(195, 0, 0),
+        0 0 1px rgb(205, 0, 0),
+        0 0 3px rgb(215, 0, 0),
+        0 0 2px rgb(225, 0, 0),
+        0 0 4px rgb(235, 0, 0),
+        0 0 8px rgb(245, 0, 0);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    transition: 0.35s;
+}
+
+nav ul li a:hover {
+    color: rgb(110, 0, 0);
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    background-color: #070707;
+    border-radius: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    width: 925px;
+}
+
+h1 {
+    display: flex;
+    color: red;
+    font-family: "a dripping marker", sans-serif;
+    font-size: 75px;
+    margin-left: 25px;
+    animation-name: glow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+    0% {
+        color: red;
+        font-family: "a dripping marker", sans-serif;
+        font-size: 75px;
+    }
+
+    50% {
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 7px rgb(195, 0, 0), 0 0 1px rgb(205, 0, 0),
+            0 0 3px rgb(215, 0, 0), 0 0 2px rgb(225, 0, 0), 0 0 4px rgb(235, 0, 0),
+            0 0 8px rgb(245, 0, 0);
+    }
+
+    100% {
+        color: red;
+        font-family: "a dripping marker", sans-serif;
+        font-size: 75px;
+    }
+}
+
+.description {
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 7px 25px;
+    text-align: left;
+}
+
+h3 {
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+    margin-left: 25px;
+    margin-top: 7px;
+}
+
+.contact-btn button {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 22px;
+    background-color: red;
+    padding: 7px 20px;
+    margin: 25px 25px;
+    border-radius: 25px;
+    border: solid 2px transparent;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.contact-btn button:hover {
+    transform: scale(1.2);
+}
+
+
+.my-services {
+    background: #070707;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.services-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.services-title h2 {
+    color: red;
+    font-size: 75px;
+    margin: 15px auto;
+    text-align: center;
+    font-family: 'a dripping marker', sans-serif;
+}
+
+.card {
+    color: red;
+    height: 450px;
+    width: 355px;
+    padding: 20px 35px;
+    background: black;
+    margin: 50px 50px;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.card i {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card h5 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.contact {
+    min-height: 800px;
+    background-color: black;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.contact-title h2 {
+    color: red;
+    font-family: 'a dripping marker', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #070707;
+    height: 500px;
+    width: 1000px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.contact-content-title {
+    color: red;
+    font-size: 27px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.socials a {
+    color: red;
+    font-size: 50px;
+    margin: 0px 20px;
+}
+
+.socials i {
+    background-color: black;
+    padding: 20px;
+    border-radius: 60px;
+    transition: transform .4s;
+}
+
+.socials i:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    text-align: center;
+    color: red;
+    background-color: black;
+}
